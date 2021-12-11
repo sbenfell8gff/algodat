@@ -168,6 +168,11 @@ body {
     width: 100%;
     height: 100%;
   }
+
+  .navbar {
+    --navbar-height: 200px;
+    height: var(--navbar-height);
+  }
 }
 
 .content {
