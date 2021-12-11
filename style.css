@@ -143,7 +143,7 @@ body {
 #navbar-toggle[aria-expanded="true"] + #navbar-menu .navbar-links {
   padding: 1em;
 }
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 900px) {
   #navbar-toggle,
   #navbar-toggle[aria-expanded="true"] {
     display: none;
@@ -170,8 +170,7 @@ body {
   }
 
   #navbar {
-    --navbar-height: 200px;
-    height: var(--navbar-height);
+    height: 80px;
   }
 }
 
