@@ -169,7 +169,7 @@ body {
     height: 100%;
   }
 
-  .navbar {
+  #navbar {
     --navbar-height: 200px;
     height: var(--navbar-height);
   }
