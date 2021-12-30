@@ -269,6 +269,22 @@ hr {
   margin-bottom: 20px; 
 }
 
+.code-block {
+  margin-top: 20px;
+  margin-bottom: 20px; 
+  height: auto;
+  margin-left: 3px;
+  border: 1px dashed #bbb;
+  border-radius: 3px;
+  background-color: #f1f1f1;
+  padding: 2px;
+  margin-right: 3px;
+}
+
+.code-block p {
+  padding: 1px;
+}
+
 /*=========================================================================================*/
 /*TEXT-CONTENT*/
 /*=========================================================================================*/
