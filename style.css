@@ -161,7 +161,7 @@ svg {
   .navbar-menu .link {
     padding: 14px 22px
   }
-  
+
   .navbar-close, .navbar-icon, .navbar-icon > * {
     display: flex;
   }
@@ -266,12 +266,12 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 .code-block {
   margin-top: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
   height: auto;
   margin-left: 3px;
   border: 1px dashed #bbb;
@@ -283,6 +283,7 @@ hr {
 
 .code-block p {
   padding: 1px;
+  text-align: center;
 }
 
 /*=========================================================================================*/
@@ -324,7 +325,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
-  margin-bottom: 20px; 
+  margin-bottom: 20px;
 }
 
 @media screen and (max-width: 800px) {
@@ -349,6 +350,136 @@ hr {
 }
 
 /*=========================================================================================*/
-/*FOOTER*/
+/*CARDS*/
 /*=========================================================================================*/
 
+@import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
+
+ /* *, *:after, *:before {
+	 box-sizing: border-box;
+} */
+ :root {
+	 --c-white: hsl(0, 0%, 15%);
+	 --c-black: #000;
+	 --c-ash: #eaeef6;
+	 --c-charcoal: #a0a0a0;
+	 --c-void: #fff;
+	 --c-fair-pink: #ffedec;
+	 --c-apricot: #fbc8be;
+	 --c-coffee: #754d42;
+	 --c-del-rio: #917072;
+	 --c-java: #1fcac5;
+	 --c-titan-white: hsl(0, 0%, 15%);
+	 --c-cold-purple: #a69fd6;
+	 --c-indigo: #fff;
+	 --c-governor: #4133b7;
+}
+
+ .cards {
+   display: flex;
+   align-items: flex-start;
+   justify-content: center;
+	 gap: 2.5rem;
+	 width: 90%;
+	 max-width: 1000px;
+	 margin: 4vh auto;
+}
+ .card {
+	 border-radius: 16px;
+	 /* max-width: 300px; */
+}
+ .information {
+	 background-color: var(--c-white);
+	 padding: 1.5rem;
+}
+ .information .tag {
+	 display: inline-block;
+   border: 1px solid #fff;
+	 background-color: var(--c-titan-white);
+	 color: var(--c-indigo);
+	 font-weight: 600;
+	 font-size: 0.875rem;
+	 padding: 0.5em 0.75em;
+	 line-height: 1;
+	 border-radius: 6px;
+}
+ .information .tag + * {
+	 margin-top: 1rem;
+}
+ .information .title {
+	 font-size: 1.5rem;
+	 color: var(--c-void);
+	 line-height: 1.25;
+}
+ .information .title + * {
+	 margin-top: 1rem;
+}
+ .information .info {
+	 color: var(--c-charcoal);
+}
+ .information .info + * {
+	 margin-top: 1.25rem;
+}
+ .information .button {
+   transition: 0.3s ease;
+	 font: inherit;
+	 line-height: 1;
+	 background-color: var(--c-white);
+	 border: 2px solid var(--c-indigo);
+	 color: var(--c-indigo);
+	 padding: 0.5em 1em;
+	 border-radius: 6px;
+	 font-weight: 500;
+	 display: inline-flex;
+	 align-items: center;
+	 justify-content: space-between;
+	 gap: 0.5rem;
+}
+ .information .button:hover, .information .button:focus {
+   transition: 0.3s ease;
+   cursor: pointer;
+	 background-color: var(--c-indigo);
+	 color: var(--c-white);
+}
+ .information .details {
+	 display: flex;
+	 gap: 1rem;
+}
+ .information .details div {
+	 padding: 0.75em 1em;
+	 background-color: var(--c-titan-white);
+	 border-radius: 8px;
+	 display: flex;
+	 flex-direction: column-reverse;
+	 gap: 0.125em;
+	 flex-basis: 50%;
+}
+ .information .details dt {
+	 font-size: 0.875rem;
+	 color: var(--c-cold-purple);
+}
+ .information .details dd {
+	 color: var(--c-indigo);
+	 font-weight: 600;
+	 font-size: 1.25rem;
+}
+
+
+/* .flex-parent-element {
+  display: flex;
+  width: 100%;
+} */
+
+@media screen and (max-width: 800px) {
+  .container-website {
+    width: 95%;
+  }
+}
+
+/* .flex-child-element {
+  flex: 1;
+  margin: 10px;
+}
+.flex-child-element:first-child {
+  margin-right: 20px;
+} */
