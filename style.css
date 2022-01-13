@@ -301,7 +301,7 @@ hr {
   margin-left: auto;
   margin-right: auto;
   padding-top: 950px;
-  padding-bottom: 30px;
+  padding-bottom: 0;
 }
 
 .content .heading {
@@ -589,7 +589,6 @@ section {
   color: var(--c-charcoal);
   text-align: center;
   font-size: 16px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
 }
 
 .about-us-card * {
@@ -624,4 +623,8 @@ section {
 .about-us-container {
   text-align: center;
   padding-bottom: 55px;
+}
+
+.about-us-heading {
+  padding-top: 80px
 }
