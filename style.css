@@ -265,7 +265,7 @@ hr {
   width: 70%;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 20px;
+  margin-top: 5px;
   margin-bottom: 20px;
 }
 
@@ -493,7 +493,7 @@ section {
   width: 100%;
   display: inline-block;
   background: #ccc;
-  height: 60vh;
+  height: 30vh;
   text-align: center;
   font-size: 22px;
   font-weight: 700;
@@ -504,7 +504,7 @@ section {
   background-color: hsl(0, 0%, 15%);
   box-sizing: border-box;
   width: 100%;
-  text-align: left;
+  text-align: center;
   font-size: 14px;
   padding: 45px 50px;
 }
@@ -517,7 +517,7 @@ section {
 /* Footer links */
 
 .footer-distributed p.footer-links {
-  font-size: 18px;
+  font-size: 15px;
   font-weight: bold;
   color: #ffffff;
   margin: 0 0 10px;
