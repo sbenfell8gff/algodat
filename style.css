@@ -269,6 +269,12 @@ hr {
   margin-bottom: 20px;
 }
 
+@media (min-width: 1000px) {
+  hr {
+    width: 865px;
+  }
+}
+
 .code-block {
   margin-top: 20px;
   margin-bottom: 20px;
@@ -354,10 +360,6 @@ hr {
 /*=========================================================================================*/
 
 @import url("https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;400;500;600;700&display=swap");
-
- /* *, *:after, *:before {
-	 box-sizing: border-box;
-} */
  :root {
 	 --c-white: hsl(0, 0%, 15%);
 	 --c-black: #000;
@@ -464,26 +466,11 @@ hr {
 	 font-size: 1.25rem;
 }
 
-
-/* .flex-parent-element {
-  display: flex;
-  width: 100%;
-} */
-
 @media screen and (max-width: 800px) {
   .container-website {
     width: 95%;
   }
 }
-
-/* .flex-child-element {
-  flex: 1;
-  margin: 10px;
-}
-.flex-child-element:first-child {
-  margin-right: 20px;
-} */
-
 
 /*=========================================================================================*/
 /*FOOTER*/
@@ -568,8 +555,6 @@ section {
 
 .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
 
-/* Media Queries */
-
 @media (max-width: 600px) {
   .footer-distributed .footer-left, .footer-distributed .footer-right {
     text-align: center;
@@ -585,4 +570,42 @@ section {
   .footer-distributed .footer-left p {
     padding: 0;
   }
+}
+
+
+.button-3d {
+  position:relative;
+  width: auto;
+  display:inline-block;
+  color: black;
+  text-decoration:none;
+  border-radius:5px;
+  border:solid 1px #4D4D4D;
+  background:#f1f1f1;
+  text-align:center;
+  padding:16px 18px 14px;
+  margin: 12px;
+
+  -webkit-transition: all 0.1s;
+  -moz-transition: all 0.1s;
+  transition: all 0.1s;
+  -webkit-box-shadow: 0px 6px 0px #4D4D4D;
+  -moz-box-shadow: 0px 6px 0px #4D4D4D;
+  box-shadow: 0px 6px 0px #4D4D4D;
+}
+
+.button-3d:active{
+    -webkit-box-shadow: 0px 2px 0px #d35400;
+    -moz-box-shadow: 0px 2px 0px #4D4D4D;
+    box-shadow: 0px 2px 0px #4D4D4D;
+    position:relative;
+    top:4px;
+}
+
+i {
+  color: #4D4D4D;
+}
+
+.fa-github {
+  font-size: 40px;
 }
