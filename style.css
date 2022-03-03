@@ -37,6 +37,18 @@ a:hover {
   transition: 0.4s ease;
 }
 
+.header-info {
+  text-align: center;
+}
+
+@media screen and (max-width: 800px) {
+  .header-info {
+    font-size: 15px;
+    padding-left: 2px;
+    padding-right: 2px;
+  }
+}
+
 /*=========================================================================================*/
 /*???*/
 /*=========================================================================================*/
