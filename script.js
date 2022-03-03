@@ -1,3 +1,8 @@
+function navbarFunc() {
+  document.getElementById('off-navmenu').checked = false
+}
+
+
 // get the element
 const text = document.querySelector('.typing-text');
 

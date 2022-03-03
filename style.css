@@ -15,6 +15,10 @@ body {
   font-family: Montserrat;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /*=========================================================================================*/
 /*NAVBAR-LINK-STYLING*/
 /*=========================================================================================*/
@@ -59,6 +63,13 @@ svg {
   opacity: 0;
   visibility: hidden;
   transition: .2s ease;
+}
+
+#showcase{
+  background-image: url('https://th.bing.com/th/id/R.e0064d7a69ee82752f91c5648f5e5c7b?rik=U6TeBMk39U4UJA&riu=http%3a%2f%2fasset-integrity.com.au%2fwp-content%2fuploads%2f2016%2f08%2fTech-Background-Resized.jpg&ehk=NDfHNwk%2bIi%2fxXHxQPQIrMiJ2%2fYMgd9t54OUeQZsBOR8%3d&risl=&pid=ImgRaw&r=0');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
 }
 
 /*=========================================================================================*/
@@ -300,7 +311,7 @@ hr {
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 950px;
+  padding-top: 70px;
   padding-bottom: 0;
 }
 
