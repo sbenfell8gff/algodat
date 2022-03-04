@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+  <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"> -->
+
+  <title>Algodat</title>
+
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Algodat is a simple website which aims to inform computer science learners on algorithms and data-structures">
+</head>
+<body>
+
+<header class="header-wrap">
+  <div class="mainInner">
+    <input type="checkbox" id="off-navmenu" class='off-navmenu hidden'>
+    <label for="off-navmenu" class="cover navC"></label>
+
+    <!-- Header title -->
+    <div class="navbar-title cont-logo">
+      <div class="navbar-logo"><img src="logo.png" height="30"></div><p><span class="title">ALGODAT</span></p>
+    </div>
+
+    <!-- Navigation bar -->
+    <nav class="navbar-menu">
+      <!-- Close button -->
+      <div class="navbar-close">
+        <label aria-label="Close" for="off-navmenu">
+          <svg viewBox="0 0 24 24">
+            <line x1="18" x2="6" y1="6" y2="18"></line>
+            <line x1="6" x2="18" y1="6" y2="18"></line>
+          </svg>
+        </label>
+      </div>
+
+      <ul>
+        <li><a href="index.html" class="link" onclick="navbarFunc()">Home</a></li>
+        <li><a href="#" class="link">Searching</a></li>
+        <li><a href="#" class="link">Sorting</a></li>
+        <li><a href="#" class="link">Recursive</a></li>
+      </ul>
+    </nav>
+
+    <div class="navbar-icon">
+      <!-- Toggle menu -->
+      <label aria-label="Navigation menu" for="off-navmenu">
+        <svg viewBox="0 0 24 24">
+          <line x1="3" x2="21" y1="12" y2="12"></line>
+          <line x1="3" x2="21" y1="6" y2="6"></line>
+          <line x1="3" x2="21" y1="18" y2="18"></line>
+        </svg>
+      </label>
+    </div>
+  </div>
+</header>
+
+<div id="featured" class="content">
+  <p class="heading">Sorting Algorithms</p>
+  <hr>
+  
+  <div class="text-center">
+    <div class="display-inline">
+      <p class="exp-p">The purpose of a sorting algorithm is to arrange a set of data in order (either increasing or decreasing). For example, a list of customer names could be sorted alphabetically by surname or a list of names could be sorted numerically by age.</p>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-distributed">
+	<div class="footer-left">
+		<p class="footer-links">
+			<a class="link-1" href="#showcase">Home</a>
+			<a href="#">Searching</a>
+			<a href="sorting.html">Sorting</a>
+      <a href="#">Recursive</a>
+		</p>
+
+		<p>Algodat &copy; 2022</p>
+	</div>
+</footer>
