@@ -683,3 +683,18 @@ section {
   margin-left: auto;
   text-align: left;
 }
+
+.exp-content {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 100px;
+  padding-bottom: 0;
+}
+
+
+.exp-content .heading {
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+}
