@@ -64,9 +64,30 @@
   <div class="text-center">
     <div class="display-inline">
       <p class="exp-subheading">Definition:</p>
-      <p class="exp-p">In computer science, a sorting algorithm is an algorithm for sorting elements of a list into a specific order.
-        The most frequently used orders are numerical order and <span class="hovertext" title="Generalization of the alphabetical order of the dictionaries to sequences of ordered symbols or, more generally, of elements of a totally ordered set.">lexicographical order</span>,
-        ascending or descending. Efficient sorting is necessary for optimizing performance.</p>
+      <p class="exp-p">A sorting algorithm is an algorithm made up of a series of instructions that takes an array as input, performs specified operations on the array, sometimes called a list, and outputs a sorted array. Sorting algorithms are often taught early in computer science classes as they provide a straightforward way to introduce other key computer science topics like Big-O notation, divide-and-conquer methods, and data structures such as binary trees, and heaps.</p>
+      <p class="exp-subheading-sub">Applications:</p>
+      <ul style="padding-left:18px;padding-top:5px;" type="square">
+        <li><p class="exp-p-li">Sorted data is faster to search.</p></li>
+        <li><p class="exp-p-li">Easier to find maximum, minimum, duplicate and specific items</p></li>
+        <li><p class="exp-p-li">Useful to compare or find overlap between arrays.</p></li>
+      </ul>
+      <p class="exp-subheading">Common sorting algorithms:</p>
+      <p class="exp-subheading-sub">Bubble Sort:</p>
+      <p class="exp-p">Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an array with n number of elements. Bubble Sort compares all the element one by one and sorts them based on their values. </br></br> If the given array has to be sorted in ascending order, then bubble sort will start by comparing the first element of the array with the second element, if the first element is greater than the second element, it will swap both the elements, and then move on to compare the second and the third element, and so on. </br></br>It is called bubble sort because with every complete iteration, the larget element in the giver arraw, 'bubbles up' to the next highest (or lowest) index.</p>
+      <p class="exp-subheading-sub-code">Python Code:</p>
+      <p class="exp-p-code"><i>
+        def bubble_sort(array): <br>
+          &emsp; for u in range(len(array)):<br>
+              &emsp;&emsp; for i in range(len(array)-1):<br>
+                      &emsp;&emsp;&emsp; if array[i] > array[i+1]:<br>
+                          &emsp;&emsp;&emsp;&emsp; array[i+1], array[i] =array[i], array[i+1]<br><br>
+          &emsp; return array
+      </i></p>
+      <!-- <p class="exp-subheading-sub">Insertion sort:</p>
+      <p class="exp-subheading-sub">Merge sort:</p>
+      <p class="exp-subheading-sub">Quick sort:</p>
+      <p class="exp-subheading-sub">Heap sort:</p>
+      <p class="exp-subheading-sub">Bucket sort:</p> -->
     </div>
   </div>
 </div>
