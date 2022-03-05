@@ -83,14 +83,32 @@
                           &emsp;&emsp;&emsp;&emsp; array[i+1], array[i] =array[i], array[i+1]<br><br>
           &emsp; return array
       </i></p>
-      <!-- <p class="exp-subheading-sub">Insertion sort:</p>
-      <p class="exp-subheading-sub">Merge sort:</p>
+      <p class="exp-subheading-sub" style="padding-top:15px;">Insertion sort:</p>
+      <p class="exp-p">An insertion sort is less complex and efficient than a merge sort, but more efficient than a bubble sort.<br><br>
+        An insertion sort compares values in turn, starting with the second value in the list. If this value is greater than the value to the left of it, no changes are made. <br><br>Otherwise this value is repeatedly moved left until it meets a value that is less than it. The sort process then starts again with the next value. This continues until the end of the list is reached.</p>
+      <p class="exp-subheading-sub-code">Python Code:</p>
+      <p class="exp-p-code"><i>
+        def insertion_sort(array):<br>
+            &emsp;for i in range(1, len(array)):<br>
+                &emsp;&emsp;key_item = array[i]<br>
+                &emsp;&emsp;j = i - 1<br><br>
+
+                &emsp;&emsp;while j >= 0 and array[j] > key_item:<br>
+                    &emsp;&emsp;&emsp;array[j + 1] = array[j]<br>
+                    &emsp;&emsp;&emsp;j -= 1<br><br>
+
+                &emsp;&emsp;array[j + 1] = key_item<br><br>
+
+            &emsp;return array
+      </i></p>
+      <!-- <p class="exp-subheading-sub">Merge sort:</p>
       <p class="exp-subheading-sub">Quick sort:</p>
       <p class="exp-subheading-sub">Heap sort:</p>
       <p class="exp-subheading-sub">Bucket sort:</p> -->
     </div>
   </div>
 </div>
+
 
 <footer class="footer-distributed">
 	<div class="footer-left">
