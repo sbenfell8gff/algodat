@@ -115,6 +115,51 @@
               &emsp;return array
         </i></p>
       </div>
+      <div style="float:left;">
+        <p class="exp-subheading-sub" style="padding-top:30px;">Merge sort:</p>
+        <p class="exp-p">Another example of a computer sorting algorithm is merge sort. This is a more complex algorithm than bubble sort, but can be more efficient.<br><br>The merge sort algorithm repeatedly divides a list into two until all the elements are separated individually. Pairs of elements are then compared, placed into order and combined. The process is then repeated until the list is recompiled as a whole.</p>
+        <p class="exp-subheading-sub-code">Specifics:</p>
+        <ul style="padding-left:30px;padding-top:10px;font-size:15px;" type="square">
+          <li><p class="exp-p-li">Best time complexity: <b>O(N logN)</b></p></li>
+          <li><p class="exp-p-li">Worst time complexity: <b>O(N logN))</b></p></li>
+          <li><p class="exp-p-li">Space complexity: <b>O(N)</b></p></li>
+        </ul>
+        <p class="exp-p-code"><i>
+          def merge_sort(arr):<br>
+            &emsp;if len(arr) > 1:<br>
+                &emsp;&emsp;a = len(arr)//2<br>
+                &emsp;&emsp;l = arr[:a]<br>
+                &emsp;&emsp;r = arr[a:]<br><br>
+
+                &emsp;&emsp;mergeSort(l)<br>
+                &emsp;&emsp;mergeSort(r)<br>
+                &emsp;&emsp;b = c = d = 0<br><br>
+
+                &emsp;&emsp;while b < len(l) and c < len(r):<br>
+                    &emsp;&emsp;&emsp;if l[b] < r[c]:<br>
+                        &emsp;&emsp;&emsp;&emsp;arr[d] = l[b]<br>
+                        &emsp;&emsp;&emsp;&emsp;b += 1<br><br>
+
+                    &emsp;&emsp;&emsp;else:<br>
+                        &emsp;&emsp;&emsp;&emsp;arr[d] = r[c]<br>
+                        &emsp;&emsp;&emsp;&emsp;c += 1<br>
+                    &emsp;&emsp;&emsp;d += 1<br><br>
+
+                &emsp;&emsp;while b < len(l):<br>
+                    &emsp;&emsp;&emsp;arr[d] = l[b]<br>
+                    &emsp;&emsp;&emsp;b += 1<br>
+                    &emsp;&emsp;&emsp;d += 1<br><br>
+
+                &emsp;&emsp;while c < len(r):<br>
+                    &emsp;&emsp;&emsp;arr[d] = r[c]<br>
+                    &emsp;&emsp;&emsp;c += 1<br>
+                    &emsp;&emsp;&emsp;d += 1<br><br>
+
+          arr = [3, 2, 7, 8]<br>
+          merge_sort(arr)<br>
+          print(arr)<br>
+        </i></p>
+      </div>
       <!-- <p class="exp-subheading-sub">Merge sort:</p>
       <p class="exp-subheading-sub">Quick sort:</p>
       <p class="exp-subheading-sub">Heap sort:</p>
