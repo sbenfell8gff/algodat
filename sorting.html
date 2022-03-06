@@ -76,8 +76,8 @@
       <p class="exp-p">Bubble Sort is a simple algorithm which is used to sort a given set of n elements provided in form of an array with n number of elements. Bubble Sort compares all the element one by one and sorts them based on their values. </br></br> If the given array has to be sorted in ascending order, then bubble sort will start by comparing the first element of the array with the second element, if the first element is greater than the second element, it will swap both the elements, and then move on to compare the second and the third element, and so on. </br></br>It is called bubble sort because with every complete iteration, the larget element in the giver arraw, 'bubbles up' to the next highest (or lowest) index.</p>
       <p class="exp-subheading-sub-code">Specifics:</p>
       <ul style="padding-left:30px;padding-top:10px;font-size:15px;" type="square">
-        <li><p class="exp-p-li">Best time complexity: <b>O(n)</b> when the given array is already sorted</p></li>
-        <li><p class="exp-p-li">Worst time complexity: <b>O(n^2)</b> when the given array is reversely sorted</p></li>
+        <li><p class="exp-p-li">Best time complexity: <b>O(n)</b></p></li>
+        <li><p class="exp-p-li">Worst time complexity: <b>O(n^2)</b></p></li>
         <li><p class="exp-p-li">Space complexity: <b>O(1)</b></p></li>
       </ul>
       <p class="exp-subheading-sub-code">Python Implementation:</p>
@@ -160,10 +160,48 @@
           print(arr)<br>
         </i></p>
       </div>
-      <!-- <p class="exp-subheading-sub">Merge sort:</p>
-      <p class="exp-subheading-sub">Quick sort:</p>
-      <p class="exp-subheading-sub">Heap sort:</p>
-      <p class="exp-subheading-sub">Bucket sort:</p> -->
+      <div style="float:left;">
+        <p class="exp-subheading-sub" style="padding-top:30px;">Quick sort:</p>
+        <p class="exp-p">Quick sort is a highly efficient sorting algorithm and is based on partitioning of array of data into smaller arrays. A large array is partitioned into two arrays one of which holds values smaller than the specified value, say pivot, based on which the partition is made and another array holds values greater than the pivot value. <br><br>Quicksort partitions an array and then calls itself recursively twice to sort the two resulting subarrays. This algorithm is quite efficient for large-sized data sets as its average and worst-case complexity are O(n2), respectively.</p>
+        <p class="exp-subheading-sub-code">Specifics:</p>
+        <ul style="padding-left:30px;padding-top:10px;font-size:15px;" type="square">
+          <li><p class="exp-p-li">Best time complexity: <b>O(n*log (n))</b></p></li>
+          <li><p class="exp-p-li">Worst time complexity: <b>O(n^2)</b></p></li>
+          <li><p class="exp-p-li">Space complexity: <b>O(N)</b></p></li>
+        </ul>
+        <p class="exp-subheading-sub-code">Python Implementation:</p>
+        <p class="exp-p-code"><i>
+          def partition(arr,low,high):<br>
+             &emsp;i = (low-1)<br>
+             &emsp;pivot = arr[high]<br><br>
+
+             &emsp;for j in range(low , high):<br>
+                &emsp;&emsp;if arr[j] <= pivot:<br>
+                   &emsp;&emsp;&emsp;i = i+1<br>
+                   &emsp;&emsp;&emsp;arr[i],arr[j] = arr[j],arr[i]<br><br>
+
+             &emsp;arr[i+1],arr[high] = arr[high],arr[i+1]<br><br>
+
+             &emsp;return (i+1)<br><br>
+
+          def quick_sort(arr,low,high):<br>
+             &emsp;if low < high:<br>
+                &emsp;&emsp;pi = partition(arr,low,high)<br><br>
+
+                &emsp;&emsp;quick_sort(arr, low, pi-1)<br>
+                &emsp;quick_sort(arr, pi+1, high)<br><br>
+
+          arr = [2,5,3,8,6,5,4,7]<br>
+          n = len(arr)<br>
+          quick_sort(arr,0,n-1)<br><br>
+
+          print("Sorted array is:")<br>
+          for i in range(n):<br>
+            &emsp;print(arr[i],end=" ")<br>
+        </i></p>
+      </div>
+      <!-- <p class="exp-subheading-sub">Heap sort:</p>
+      <p class="exp-subheading-sub">Bucket sort:</p>  -->
     </div>
   </div>
 </div>
