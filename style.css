@@ -533,7 +533,6 @@ section {
 
 .footer-distributed p.footer-links {
   font-size: 15px;
-  font-weight: bold;
   color: #ffffff;
   margin: 0 0 10px;
   padding: 0;
@@ -547,6 +546,10 @@ section {
   text-decoration: none;
   color: inherit;
   transition: ease .25s;
+}
+
+.footer-distributed p.footer-links a:hover {
+  color: white;
 }
 
 .footer-distributed .footer-links a:before {
@@ -778,4 +781,36 @@ section {
 .info {
   background-color: var(--c-white);
   border-left: 6px solid var(--c-white);
+}
+
+/*=========================================================================================*/
+/*SCROLL-TO-TOP-BUTTON*/
+/*=========================================================================================*/
+
+.scrollToTopBtn {
+  background-color: #3D72A4;
+  border: none;
+  border-radius: 50%;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 48px;
+  width: 48px;
+
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 1044;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all .5s ease
+}
+
+.showBtn {
+  opacity: 1;
+  transform: translateY(0)
+}
+
+.hmm {
+  text-decoration: none;
 }
