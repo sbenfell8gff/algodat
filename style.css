@@ -85,6 +85,29 @@ svg {
   opacity: 9%;
 }
 
+.button-show{
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
+  border: var(--c-white) 1px solid;
+  padding: 10px 20px;
+  border-radius: 10px;
+  transition: 0.2s ease-in;
+}
+
+.button-show:hover{
+  transition: 0.2s ease-in;
+  letter-spacing: 1.3px;
+  background-color: transparent !important;
+  color: black !important;
+}
+
+@media screen and (max-width: 800px) {
+  .button-show {
+    font-size: 15px;
+  }
+}
+
 /*=========================================================================================*/
 /*NAVBAR-STYLING*/
 /*=========================================================================================*/
@@ -227,9 +250,10 @@ svg {
 /*=========================================================================================*/
 
 .typing-text {
-  font-size: 30px;
-  font-weight: 500;
-  padding-top: 200px;
+  font-size: 50px;
+  font-weight: 700;
+  padding-top: 108px;
+  text-align: center;
 }
 
 .typing-text::after {
@@ -239,7 +263,7 @@ svg {
 
 @media screen and (max-width: 800px) {
   .child p {
-    font-size: 20px;
+    font-size: 25px;
   }
 }
 
@@ -276,9 +300,22 @@ svg {
 
 .child {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -45%);
+}
+
+.child2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -60%);
+}
+
+@media screen and (max-width: 800px) {
+  .child {
+
+  }
 }
 
 /*=========================================================================================*/
