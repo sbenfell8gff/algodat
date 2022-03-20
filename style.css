@@ -23,7 +23,7 @@ html {
 /*NAVBAR-LINK-STYLING*/
 /*=========================================================================================*/
 
-a {
+.header-wrap a, .footer-distributed a {
   text-decoration: none;
   padding: 0.4em 0.6em;
   border-radius: 5px;
@@ -31,7 +31,7 @@ a {
   transition: 0.4s ease;
 }
 
-a:hover {
+.header-wrap a:hover, .footer-distributed a:hover {
   background-color: hsl(0, 0%, 25%);
   color: white;
   transition: 0.4s ease;
@@ -640,21 +640,6 @@ section {
   }
 }
 
-.footer-socials {
-  position: relative;
-  height: 40px;
-  width: 100%;
-  background-color: #f1f1f1;
-}
-
-.footer-socials .icons {
-  display: inline-block;
-}
-
-/* .footer-socials .icons i {
-  position: flex;
-} */
-
 /*=========================================================================================*/
 /*ABOUT-US-CARDS*/
 /*=========================================================================================*/
@@ -878,9 +863,6 @@ section {
 
 /* Footer at the bottom */
 .footer {
-  left: 0;
-  bottom: 0;
-  width: 100%;
   height: 50px;
   width: 100%;
   background-color: var(--c-white);
@@ -902,7 +884,17 @@ section {
   text-align: center;
 }
 
-.fa-github:hover, .fa-instagram:hover, .fa-stack-overflow:hover {
+.fa-discord {
+  padding-top: 40px;
+  color: grey !important;
+  transition: 0.4s;
+  cursor: pointer;
+  padding-bottom: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+.fa-github:hover, .fa-instagram:hover, .fa-stack-overflow:hover,.fa-discord:hover {
   color: #3D72A4 !important;
   transition: 0.4s;
   cursor: pointer;
